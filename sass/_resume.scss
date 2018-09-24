@@ -35,6 +35,20 @@
         //background-color: rgba(#fff, .7);
         padding: 5rem 10rem;
 
+        @media only screen and (max-width: $bp-largest) {
+            width: 80%;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            width: 90%;
+            padding: 5rem 7rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 100%;
+            padding: 5rem;
+        }
+
         &--header {
             font-size: 1.2rem;
             text-align: center;
@@ -109,6 +123,11 @@
         fill: $color-gray-dark;
         margin: 0 1rem;
         transition: all .2s;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 2rem;
+            height: 2rem;
+        }
 
         &:hover {
             fill: $color-primary;

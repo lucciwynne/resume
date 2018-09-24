@@ -13,7 +13,10 @@ $bg-color: aliceblue;
 $font-primary: 'Montserrat', sans-serif;
 
 // RESPONSIVE BREAKPOINTS
-
+$bp-largest: 75em; // 1200px/16px = 75
+$bp-large: 50em; // 800/16 = 50
+$bp-medium: 37.5em; // 600/16 = 37.5
+$bp-small: 25em; // 400/16 = 25
 
 *,
 *::before,
@@ -27,6 +30,14 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
     scroll-behavior: smooth;
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 55%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 40%;
+    }
 }
 
 body {
