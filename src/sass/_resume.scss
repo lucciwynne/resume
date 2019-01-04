@@ -1,7 +1,6 @@
 .resume {
     width: 100%;
     font-size: 1.5rem;
-    background-color: $bg-color;
     padding: 0;
     transition: all .3s;
 
@@ -13,27 +12,27 @@
         &:visited {
             color: $color-primary-dark;
             position: absolute;
-            top: 2.5rem;
-            left: 2.5rem;
+            top: 4rem;
+            left: 4rem;
             font-size: 1.1rem;
             font-weight: 400;
             line-height: 1;
             text-decoration: none;
             text-transform: uppercase;
             display: inline-block;
-            border-bottom: 1px solid transparent;
-            padding-bottom: .5rem;
+            border: 1px solid transparent;
+            padding: 1rem;
             transition: all .2s;
         }
 
         &:hover {
-            border-bottom: 1px solid $color-primary-dark;
+            border: 1px solid $color-primary-dark;
         }
     }
 
     &__content {
         width: 60%;
-        padding: 5rem 10rem;
+        padding: 10rem;
 
         @media only screen and (max-width: $bp-largest) {
             width: 80%;
@@ -41,12 +40,12 @@
 
         @media only screen and (max-width: $bp-large) {
             width: 90%;
-            padding: 5rem 7rem;
+            padding: 10rem 7rem;
         }
 
         @media only screen and (max-width: $bp-medium) {
             width: 100%;
-            padding: 5rem 3.5rem;
+            padding: 10rem 3.5rem;
         }
 
         &--header {
@@ -59,6 +58,7 @@
             font-size: 4rem;
             font-family: $font-heading;
             text-transform: uppercase;
+            letter-spacing: .3rem;
         }
 
         &--links {
@@ -95,13 +95,14 @@
             text-transform: uppercase;
             display: inline-block;
             margin: 1.5rem 0;
+            letter-spacing: .2rem;
         }
     }
 
     &__download {
         position: absolute;
-        top: 2.5rem;
-        right: 2.5rem;
+        top: 10rem;
+        right: 4rem;
     }
 
     &__link {
@@ -133,4 +134,28 @@
     .list {
         padding-left: 1rem;
     }
+
+    &__theme {
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+
+        &--switch {
+            color: $color-primary-dark;
+            border: 1px solid $color-primary-dark;
+            background-color: transparent;
+            font-size: 1.1rem;
+            padding: 1rem 3rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all .3s;
+
+            &:hover {
+                color: $bg-color;
+                background-color: $color-primary-dark;
+                border: 1px solid transparent;
+            }
+        }
+    }
 }
+

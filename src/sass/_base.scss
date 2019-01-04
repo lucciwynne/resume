@@ -48,6 +48,11 @@ body {
     line-height: 1.5;
 }
 
+.dark-theme {
+    background-color: $color-primary-dark;
+    color: $bg-color;
+}
+
 section {
     padding-bottom: 10rem;
 }
