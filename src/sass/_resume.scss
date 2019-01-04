@@ -1,5 +1,6 @@
 .resume {
     width: 100%;
+    font-size: 1.5rem;
     background-color: $bg-color;
     padding: 0;
     transition: all .3s;
@@ -32,7 +33,6 @@
 
     &__content {
         width: 60%;
-        //background-color: rgba(#fff, .7);
         padding: 5rem 10rem;
 
         @media only screen and (max-width: $bp-largest) {
@@ -46,17 +46,18 @@
 
         @media only screen and (max-width: $bp-medium) {
             width: 100%;
-            padding: 5rem;
+            padding: 5rem 3.5rem;
         }
 
         &--header {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             text-align: center;
             padding-bottom: 1.5rem;
         }
 
         &--name {
-            font-size: 3rem;
+            font-size: 4rem;
+            font-family: $font-heading;
             text-transform: uppercase;
         }
 
@@ -72,7 +73,6 @@
         }
 
         &--email {
-            background-color: $color-primary;
             margin: 0 0;
             padding: 0 .5rem;
             display: inline;
@@ -80,7 +80,6 @@
         }
 
         &--summary {
-            font-size: 1.2rem;
             text-align: left;
             padding: 1rem 0;
         }
@@ -90,16 +89,12 @@
         }
 
         &--heading {
-            background-color: $color-primary;
-            font-size: 1.3rem;
+            font-family: $font-heading;
+            font-size: 1.6rem;
+            font-weight: 100;
             text-transform: uppercase;
-            padding: 0 .5rem;
             display: inline-block;
             margin: 1.5rem 0;
-        }
-
-        &--text {
-            font-size: 1.2rem;
         }
     }
 
@@ -120,7 +115,7 @@
     &__icon {
         width: 3rem;
         height: 3rem;
-        fill: $color-gray-dark;
+        fill: $color-primary-dark;
         margin: 0 1rem;
         transition: all .2s;
 
@@ -130,7 +125,8 @@
         }
 
         &:hover {
-            fill: $color-primary;
+            fill: transparent;
+            stroke: $color-primary-dark;
         }
     }
 

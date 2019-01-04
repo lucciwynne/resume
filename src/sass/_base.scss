@@ -1,16 +1,17 @@
+// IMPORTS
+@import url('https://fonts.googleapis.com/css?family=Questrial|Open-Sans');
+
 // COLOR VARIABLES
-$color-primary-dark: #181819;
+$color-primary-dark: #1D1E22;
 $color-primary: #bde0ff;
 
-$color-gray: #787c7f;
-$color-gray-dark: #606366;
-$color-gray-dark-1: #484a4c;
-$color-gray-dark-2: #303133;
+$color-gray: #8e8e90;
 
-$bg-color: aliceblue;
+$bg-color: #fff;
 
 // FONT VARIABLES
-$font-primary: 'Montserrat', sans-serif;
+$font-heading: 'Questrial', sans-serif;
+$font-primary: 'Open Sans', sans-serif;
 
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; // 1200px/16px = 75
@@ -44,7 +45,7 @@ body {
     background-color: $bg-color;
     font-family: $font-primary;
     color: $color-primary-dark;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 section {
