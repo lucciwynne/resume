@@ -103,6 +103,13 @@
         position: absolute;
         top: 10rem;
         right: 4rem;
+
+        @media screen and (max-width: $bp-large) {
+            bottom: 4rem;
+            top: auto;
+            right: 50%;
+            transform: translateX(50%);
+        }
     }
 
     &__link {
